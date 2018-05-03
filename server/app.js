@@ -6,7 +6,9 @@ const app = express();
 
 //middleware
 app.use('/graphql',graphqlHTTP({
-  schema
+  schema,
+  graphiql: true
+
   //schema:schema
 }));
 
