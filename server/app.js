@@ -1,8 +1,11 @@
 const express = require("express");
 const graphqlHTTP = require("express-graphql");
-const schema = require("./schema/schema")
+const schema = require("./schema/schema");
+const mongoose = require('mongoose');
 
 const app = express();
+
+mongoose.connect('');
 
 //middleware
 app.use('/graphql',graphqlHTTP({
